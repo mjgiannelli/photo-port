@@ -28,7 +28,7 @@ function App() {
         currentCategory={currentCategory}
       />
       <main>
-        <Gallery />
+      <Gallery currentCategory={currentCategory}></Gallery>
         <About />
       </main>
     </div>
