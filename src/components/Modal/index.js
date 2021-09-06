@@ -1,4 +1,4 @@
-const Modal = ({currentPhoto}) => {
+const Modal = ({onClose, currentPhoto}) => {
     const { name, category, description, index } = currentPhoto
     return (
         <div className="modalBackdrop">
@@ -11,7 +11,7 @@ const Modal = ({currentPhoto}) => {
                 <p>
                     {description}
                 </p>
-                <button type="button">
+                <button onClick={onClose} type="button">
                     Close this modal
                 </button>
             </div>
